@@ -11,6 +11,8 @@ public class Agenda extends BaseAgenda {
     private String tanggal;
     private String waktu;
     private String deskripsi;
+    private String status;
+
 
     public Agenda(String judul, String tanggal, String waktu, String deskripsi) {
         this.judul = judul;
@@ -18,6 +20,15 @@ public class Agenda extends BaseAgenda {
         this.waktu = waktu;
         this.deskripsi = deskripsi;
     }
+    
+    public Agenda(String judul, String tanggal, String waktu, String deskripsi, String status) {
+        this.judul = judul;
+        this.tanggal = tanggal;
+        this.waktu = waktu;
+        this.deskripsi = deskripsi;
+        this.status = status;
+    }
+
 
     // Getter & Setter (ENCAPSULATION)
     public String getJudul() { return judul; }
@@ -31,6 +42,10 @@ public class Agenda extends BaseAgenda {
 
     public String getDeskripsi() { return deskripsi; }
     public void setDeskripsi(String deskripsi) { this.deskripsi = deskripsi; }
+    
+    public String getStatus() { return status; }
+    public void setStatus(String status) { this.status = status; }
+
 
     /**
      * POLYMORPHISM
