@@ -1,13 +1,21 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package model;
 
+import java.util.ArrayList;
+
 /**
- *
- * @author Ardii
+ * AgendaModel
+ * Menyimpan list agenda menggunakan ArrayList.
+ * Bagian dari MVC → Model.
  */
+
 public class AgendaModel {
-    
+    private ArrayList<Agenda> data = new ArrayList<>();
+
+    public void tambah(Agenda a) { data.add(a); }
+
+    public void hapus(int index) { data.remove(index); }
+
+    public void update(int index, Agenda a) { data.set(index, a); }
+
+    public ArrayList<Agenda> getAll() { return data; }
 }

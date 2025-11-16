@@ -1,13 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package model;
 
 /**
- *
- * @author Ardii
+ * BaseAgenda
+ * Kelas abstrak yang menjadi dasar agenda.
+ * Menggunakan Abstraction dan Polymorphism (abstract method).
  */
-public class BaseAgenda {
-    
+
+public abstract class BaseAgenda {
+    // Method abstrak, akan dioverride oleh class Agenda
+    public abstract String getRingkasan();
 }
