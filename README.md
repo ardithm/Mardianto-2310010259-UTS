@@ -1,4 +1,3 @@
-# AplikasiAgendaPribadi
 # 📝 CatatKu – Aplikasi Agenda Pribadi  
 Aplikasi desktop berbasis **Java Swing** untuk mencatat, mengelola, dan memantau agenda harian, mingguan, dan bulanan.  
 Dibuat sebagai tugas **Ujian Tengah Semester (UTS) – Pemrograman Berorientasi Objek 2 (PBO)**.
@@ -52,6 +51,7 @@ Aplikasi ini menerapkan pola **Model – View – Controller** agar lebih rapi, 
 ### 📁 Model  
 Menyimpan dan mengelola data agenda.  
 Class penting:  
+- `BaseAgenda.java`  
 - `Agenda.java`  
 - `AgendaModel.java`
 
@@ -71,6 +71,7 @@ Class:
 ```
 src/
 ├── model/
+│   ├── BaseAgenda.java
 │   ├── Agenda.java
 │   └── AgendaModel.java
 ├── view/
@@ -94,7 +95,6 @@ src/
 Contoh format file TXT yang dihasilkan aplikasi:
 
 ```
-text
 2025-01-19 | 10:30 | Meeting Proyek | Belum
 Diskusi modul dan timeline.
 -----------------------------------
@@ -129,7 +129,8 @@ Materi interface dan collections.
 - ✔ UI rapi dan user-friendly  
 - ✔ Text area wrap dan auto-row resize  
 - ✔ Import–Export TXT (bonus nilai)  
-- ✔ Validasi input & dialog konfirmasi  
+- ✔ Validasi input & dialog konfirmasi
+- ✔ Fitur filter tanggal & pencarian real-time
 - ✔ Komponen modern (DatePicker & TimePicker)
 
 ---
@@ -137,11 +138,12 @@ Materi interface dan collections.
 ## 🧩 Konsep PBO yang Diterapkan
 
 - **Class & Object**  
-- **Encapsulation** (getter/setter)  
+- **Encapsulation** (getter/setter)
+- **Inheritance**  
 - **Abstraction (MVC)**  
-- **Polymorphism (opsional)**  
-
-> *Inheritance tidak wajib pada aplikasi GUI sehingga implementasi MVC sudah memenuhi syarat modul UTS.*
+- **Polymorphism (opsional)**
+- **ArrayList & Data Structure**
+- **Event Handling Controller**
 
 ---
 
